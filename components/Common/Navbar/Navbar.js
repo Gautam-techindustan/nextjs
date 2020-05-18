@@ -27,16 +27,16 @@ export default function Header() {
                                 <Link href="/" passHref>
                                     <Nav.Link >Home</Nav.Link>
                                 </Link>
-                                <div onClick={() => onChangeRouter("/test/1")} >
+                                {/* <div onClick={() => onChangeRouter("/test/1")} >
                                     <Nav.Link >Test</Nav.Link>
-                                </div>
+                                </div> */}
                                 <Link href="/topdevelopers" as="/topdevelopers" passHref>
                                     <Nav.Link >Top Developers</Nav.Link>
                                 </Link>
                                 <Link href="/blog" as="/blog" passHref>
                                     <Nav.Link >Blog</Nav.Link>
                                 </Link>
-                                <Link href="/contactus" passHref>
+                                <Link href="/contactus"  as="/blog" passHref>
                                     <Nav.Link >Write For Us</Nav.Link>
                                 </Link>
                                 <Nav.Link className="btn btn-primary text-caps btn-rounded btn-framed" onClick={() => setModalShow(true)}>GET LISTED</Nav.Link>
